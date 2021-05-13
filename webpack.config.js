@@ -12,6 +12,7 @@ module.exports = {
     resolve: {
         symlinks: false,
         extensions: [".ts", ".js"],
+        mainFields: ["main", "module"],
     },
 
     cache: false,
@@ -57,4 +58,5 @@ module.exports = {
         filename: "server-built.js",
         path: path.resolve(__dirname, "dist"),
     },
+
 };
