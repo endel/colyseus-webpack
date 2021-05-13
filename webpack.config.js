@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin').CleanWebpackPlugin;
 
 module.exports = {
@@ -35,6 +36,21 @@ module.exports = {
 
     plugins: [
         new CleanWebpackPlugin(),
+
+        // Fix optional dependency
+        new webpack.IgnorePlugin({
+            resourceRegExp: /^hiredis$/,
+        }),
+
+        // Fix LICENSE files being included by default-gateway module
+        new webpack.IgnorePlugin({
+            resourceRegExp: /^(.*)LICENSE$/i,
+        }),
+
+        // Fix markdown files being included by default-gateway module
+        new webpack.IgnorePlugin({
+            resourceRegExp: /^(.+).md$/i,
+        }),
     ],
 
     output: {

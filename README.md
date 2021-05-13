@@ -27,56 +27,6 @@ Critical dependency: the request of a dependency is an expression
  @ ./node_modules/express/index.js 11:0-41
  @ ./node_modules/@colyseus/arena/lib/index.js 11:32-50
  @ ./src/index.ts 14:16-42
-
-2 warnings have detailed information that is not shown.
-Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
-
-ERROR in ./node_modules/default-gateway/LICENSE 1:14
-Module parse failed: Unexpected token (1:14)
-You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
-> Copyright (c) silverwind
-| All rights reserved.
-|
- @ ./node_modules/default-gateway/ sync ^\.\/.*$ ./LICENSE
- @ ./node_modules/default-gateway/index.js 24:12-32
- @ ./node_modules/internal-ip/index.js 3:23-49
- @ ./node_modules/colyseus/esm/discovery/index.mjs 1:0-29 6:52-57
- @ ./node_modules/colyseus/esm/Server.mjs 10:0-69 83:8-20 99:14-28
- @ ./node_modules/colyseus/esm/index.mjs 2:0-38 2:0-38
- @ ./src/rooms/MyRoom.ts 4:19-38
- @ ./src/arena.config.ts 11:17-42
- @ ./src/index.ts 16:39-64
-
-ERROR in ./node_modules/default-gateway/README.md 1:1
-Module parse failed: Unexpected character ' ' (1:1)
-You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
-> # default-gateway
-| [![](https://img.shields.io/npm/v/default-gateway.svg?style=flat)](https://www.npmjs.org/package/default-gateway) [![](https://img.shields.io/npm/dm/default-gateway.svg)](https://www.npmjs.org/package/default-gateway) [![](https://api.travis-ci.org/silverwind/default-gateway.svg?style=flat)](https://travis-ci.org/silverwind/default-gateway)
-|
- @ ./node_modules/default-gateway/ sync ^\.\/.*$ ./README.md
- @ ./node_modules/default-gateway/index.js 24:12-32
- @ ./node_modules/internal-ip/index.js 3:23-49
- @ ./node_modules/colyseus/esm/discovery/index.mjs 1:0-29 6:52-57
- @ ./node_modules/colyseus/esm/Server.mjs 10:0-69 83:8-20 99:14-28
- @ ./node_modules/colyseus/esm/index.mjs 2:0-38 2:0-38
- @ ./src/rooms/MyRoom.ts 4:19-38
- @ ./src/arena.config.ts 11:17-42
- @ ./src/index.ts 16:39-64
-
-ERROR in ./node_modules/redis-parser/lib/hiredis.js 3:14-32
-Module not found: Error: Can't resolve 'hiredis' in '/Users/endel/Projects/colyseus/colyseus-webpack/node_modules/redis-parser/lib'
-Did you mean './hiredis'?
-Requests that should resolve in the current directory need to start with './'.
-Requests that start with a name are treated as module requests and resolve within module directories (node_modules).
-If changing the source code is not an option there is also a resolve options called 'preferRelative' which tries to resolve these kind of requests in the current directory too.
- @ ./node_modules/redis-parser/lib/parser.js 344:20-40
- @ ./node_modules/redis-parser/index.js 3:0-40
- @ ./node_modules/redis/index.js 11:13-36
- @ ./node_modules/colyseus/esm/Server.mjs 17:0-15
- @ ./node_modules/colyseus/esm/index.mjs 2:0-38 2:0-38
- @ ./src/rooms/MyRoom.ts 4:19-38
- @ ./src/arena.config.ts 11:17-42
- @ ./src/index.ts 16:39-64
 ```
 
 # Welcome to Colyseus!
